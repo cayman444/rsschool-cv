@@ -22,8 +22,14 @@ body{
     flex-direction: column;
 }
 
+
+pre{
+    background-color: #f6f8fa;
+}
+
 .main{
     flex: 1 1 auto;
+    padding-bottom: 100px;
 }
 
 .main__container{
@@ -45,7 +51,6 @@ body{
 
 
 .section{
-    flex: 0 1 50%;
     padding: 30px;
     border-bottom: 1px solid silver;
 }
@@ -55,10 +60,18 @@ body{
     margin-bottom: 20px;
 }
 .section__list {
-    padding-left: 10px;
+    list-style-position: inside;
 }
 .section__item {
     margin-bottom: 10px;
+}
+
+.section__item span{
+    font-weight: 700;
+}
+
+.section__item a:hover{
+    text-decoration: underline;
 }
 .section__text {
     font-size: 18px;
@@ -83,6 +96,7 @@ body{
 .nav__list {
     display: flex;
     gap: 30px;
+    list-style: none;
 }
 
 .nav__item {
@@ -113,6 +127,7 @@ body{
 }
 
 .icon-menu {
+    
 }
 
 .profile {
@@ -145,6 +160,9 @@ body{
     font-size: 18px;
 }
 
+.contacts-list{
+}
+
 .contacts-item {
     display: flex;
     align-items: center;
@@ -168,3 +186,39 @@ body{
 .contacts-item:nth-child(3)::before{
     background-image: url(../img/icons/telegram.svg);
 }
+
+.footer {
+    padding: 50px 0;
+    background-color: silver;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__year {
+    font-size: 22px;
+}
+.footer__github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (any-hover: hover){
+    .footer__github:hover{
+        text-decoration: underline;
+    }
+}
+.footer__github::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/github.svg) center no-repeat;
+    background-size: cover;
+}
+
+.footer__image {
+    flex: 0 1 121px;
+}
+
