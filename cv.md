@@ -10,11 +10,11 @@
 
 I have a strong motivation to learn new things, and I am ready for the challenges that will come my way.
 
-## Skills 
+## Skills
 
 * HTML
 * CSS/SASS
-* Basics Git, GitHub 
+* Basics Git, GitHub
 * VS Code
 * Basics Figma
 
